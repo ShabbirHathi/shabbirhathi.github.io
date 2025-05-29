@@ -10,24 +10,21 @@ const Contact = () => {
       title: "Email",
       description: "For project inquiries and collaborations",
       action: "Send Email",
-      href: "mailto:contact@example.com",
-      color: "blue"
+      href: "mailto:contact@example.com"
     },
     {
       icon: Linkedin,
       title: "LinkedIn",
       description: "Let's connect professionally",
       action: "Connect",
-      href: "https://linkedin.com",
-      color: "blue"
+      href: "https://linkedin.com"
     },
     {
       icon: Github,
       title: "GitHub",
       description: "Check out my code repositories",
       action: "View Profile",
-      href: "https://github.com",
-      color: "gray"
+      href: "https://github.com"
     }
   ];
 
@@ -73,13 +70,13 @@ const Contact = () => {
               {collaborationTypes.map((type, index) => (
                 <Card 
                   key={type.title}
-                  className="text-center hover:shadow-lg transition-all duration-300 hover:scale-105 animate-fade-in"
+                  className="text-center bg-white border border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all duration-300 hover:scale-105 animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardContent className="pt-6 sm:pt-8 p-4 sm:p-6">
                     <div className="flex justify-center mb-3 sm:mb-4">
-                      <div className="p-3 sm:p-4 bg-blue-100 rounded-full">
-                        <type.icon className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600" />
+                      <div className="p-3 sm:p-4 bg-slate-100 border border-slate-200 rounded-full">
+                        <type.icon className="w-6 h-6 sm:w-8 sm:h-8 text-slate-700" />
                       </div>
                     </div>
                     <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">
@@ -99,17 +96,13 @@ const Contact = () => {
             {contactMethods.map((method, index) => (
               <Card 
                 key={method.title}
-                className="hover:shadow-lg transition-all duration-300 hover:scale-105 animate-fade-in"
+                className="bg-white border border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all duration-300 hover:scale-105 animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardHeader className="text-center pb-3 sm:pb-4 p-4 sm:p-6">
                   <div className="flex justify-center mb-3 sm:mb-4">
-                    <div className={`p-3 sm:p-4 rounded-full ${
-                      method.color === 'blue' ? 'bg-blue-100' : 'bg-gray-100'
-                    }`}>
-                      <method.icon className={`w-6 h-6 sm:w-8 sm:h-8 ${
-                        method.color === 'blue' ? 'text-blue-600' : 'text-gray-600'
-                      }`} />
+                    <div className="p-3 sm:p-4 rounded-full bg-slate-100 border border-slate-200">
+                      <method.icon className="w-6 h-6 sm:w-8 sm:h-8 text-slate-700" />
                     </div>
                   </div>
                   <CardTitle className="text-lg sm:text-xl text-gray-900">
@@ -122,7 +115,7 @@ const Contact = () => {
                   </p>
                   <Button 
                     asChild
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white border-blue-600 hover:border-blue-700 text-sm sm:text-base"
+                    className="w-full bg-slate-800 hover:bg-slate-900 text-white text-sm sm:text-base"
                   >
                     <a href={method.href} target="_blank" rel="noopener noreferrer">
                       {method.action}
@@ -134,12 +127,12 @@ const Contact = () => {
           </div>
 
           {/* Call to Action */}
-          <Card className="bg-gradient-to-r from-blue-900 via-blue-800 to-purple-900 text-white border-none">
+          <Card className="bg-slate-900 text-white border-none shadow-2xl">
             <CardContent className="py-12 sm:py-16 text-center p-4 sm:p-8">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
                 Ready to Build the Future Together?
               </h3>
-              <p className="text-lg sm:text-xl text-blue-100 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-lg sm:text-xl text-slate-300 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
                 I'm passionate about creating solutions that make a real difference. 
                 Let's discuss how we can bring your vision to life with cutting-edge AI and intelligent systems.
               </p>
@@ -147,7 +140,7 @@ const Contact = () => {
                 <Button 
                   size="lg" 
                   asChild
-                  className="bg-blue-600 text-white hover:bg-blue-700 border-2 border-blue-600 hover:border-blue-700 px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold w-full sm:w-auto"
+                  className="bg-white text-slate-900 hover:bg-slate-100 px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold w-full sm:w-auto"
                 >
                   <a href="mailto:contact@example.com">
                     <Mail className="mr-2" size={18} />
@@ -158,7 +151,7 @@ const Contact = () => {
                   size="lg" 
                   variant="outline"
                   asChild
-                  className="border-2 border-blue-300 text-blue-300 hover:bg-blue-300 hover:text-blue-900 bg-transparent px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold w-full sm:w-auto"
+                  className="border-2 border-white text-white hover:bg-white hover:text-slate-900 bg-transparent px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold w-full sm:w-auto"
                 >
                   <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="mr-2" size={18} />
