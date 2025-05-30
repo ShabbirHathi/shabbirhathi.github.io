@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import AIAgent3D from "@/components/AIAgent3D";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <Skills />
       <Projects />
       <Contact />
+      <AIAgent3D />
     </div>
   );
 };
