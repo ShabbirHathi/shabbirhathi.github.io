@@ -116,8 +116,8 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Refined Social Links */}
-          <div className="flex justify-center space-x-8 mb-16">
+          {/* Refined Social Links - Fixed spacing to prevent overlap */}
+          <div className="flex justify-center space-x-8 mb-20">
             {[
               { icon: Github, href: "https://github.com", label: "GitHub", color: "hover:text-gray-300" },
               { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn", color: "hover:text-blue-400" },
@@ -136,8 +136,8 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Elegant Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        {/* Fixed Scroll Indicator - Increased bottom margin to prevent overlap */}
+        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
           <div className="flex flex-col items-center space-y-2 animate-bounce">
             <span className="text-gray-400 text-sm font-medium">Scroll to explore</span>
             <ChevronDown size={24} className="text-gray-400" />
