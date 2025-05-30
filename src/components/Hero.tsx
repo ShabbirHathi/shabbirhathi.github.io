@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Code, ChevronDown, Sparkles, Brain, Zap } from "lucide-react";
+import { Github, Linkedin, Mail, Code, ChevronDown, Sparkles, Brain, Zap, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
@@ -20,136 +20,128 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white flex items-center justify-center relative overflow-hidden">
-      {/* Animated Background */}
+    <section className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white flex items-center justify-center relative overflow-hidden">
+      {/* Enhanced Background */}
       <div className="absolute inset-0">
-        {/* Floating Particles */}
-        {[...Array(20)].map((_, i) => (
+        {/* Subtle Grid Pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px]" />
+        
+        {/* Professional Floating Elements */}
+        {[...Array(12)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-1 h-1 bg-blue-400 rounded-full animate-pulse"
+            className="absolute w-1 h-1 bg-blue-400/40 rounded-full animate-pulse"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${2 + Math.random() * 4}s`
+              animationDelay: `${Math.random() * 5}s`,
+              animationDuration: `${3 + Math.random() * 4}s`
             }}
           />
         ))}
-        
-        {/* Neural Network Lines */}
-        <div className="absolute inset-0 opacity-20">
-          <svg width="100%" height="100%" className="absolute inset-0">
-            <defs>
-              <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#3B82F6" />
-                <stop offset="100%" stopColor="#8B5CF6" />
-              </linearGradient>
-            </defs>
-            {[...Array(8)].map((_, i) => (
-              <line
-                key={i}
-                x1={`${Math.random() * 100}%`}
-                y1={`${Math.random() * 100}%`}
-                x2={`${Math.random() * 100}%`}
-                y2={`${Math.random() * 100}%`}
-                stroke="url(#line-gradient)"
-                strokeWidth="1"
-                className="animate-pulse"
-                style={{ animationDelay: `${i * 0.5}s` }}
-              />
-            ))}
-          </svg>
-        </div>
 
-        {/* Mouse Follow Effect */}
+        {/* Subtle Mouse Follow Effect */}
         <div
-          className="absolute w-96 h-96 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-3xl"
+          className="absolute w-96 h-96 rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/10 blur-3xl transition-all duration-700 ease-out"
           style={{
             left: mousePosition.x - 192,
             top: mousePosition.y - 192,
-            transition: 'all 0.3s ease-out'
           }}
         />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 text-center relative z-10">
-        <div className="max-w-5xl mx-auto">
-          {/* AI Icon with Glow */}
-          <div className="mb-8 relative">
-            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-4xl font-bold mb-6 shadow-2xl relative">
-              <Brain size={48} className="text-white animate-pulse" />
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 blur-xl opacity-50 animate-pulse" />
+        <div className="max-w-6xl mx-auto">
+          {/* Professional AI Icon */}
+          <div className="mb-12 relative">
+            <div className="w-28 h-28 mx-auto rounded-2xl bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center mb-8 shadow-2xl relative group">
+              <Brain size={40} className="text-white" />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-600 to-purple-600 blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300" />
             </div>
           </div>
 
-          {/* Main Content */}
-          <div className="space-y-6 mb-12">
-            <h1 className="text-5xl sm:text-6xl md:text-8xl font-black mb-6 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent leading-tight">
-              AI/ML
-              <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                Developer
-              </span>
-            </h1>
-            
-            <div className="flex items-center justify-center space-x-4 text-xl sm:text-2xl md:text-3xl mb-6 text-blue-200">
-              <Sparkles className="w-6 h-6" />
-              <span>Software Engineer & Backend Specialist</span>
-              <Zap className="w-6 h-6" />
+          {/* Enhanced Typography */}
+          <div className="space-y-8 mb-16">
+            <div className="space-y-4">
+              <h1 className="text-6xl sm:text-7xl md:text-8xl font-black mb-4 tracking-tight">
+                <span className="bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent">
+                  AI/ML
+                </span>
+                <br />
+                <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
+                  Developer
+                </span>
+              </h1>
+              
+              <div className="flex items-center justify-center space-x-6 text-xl md:text-2xl text-gray-300 mb-6">
+                <div className="flex items-center space-x-2">
+                  <Sparkles className="w-5 h-5 text-blue-400" />
+                  <span>Software Engineer</span>
+                </div>
+                <div className="w-1 h-1 bg-gray-500 rounded-full" />
+                <div className="flex items-center space-x-2">
+                  <Zap className="w-5 h-5 text-purple-400" />
+                  <span>Backend Specialist</span>
+                </div>
+              </div>
             </div>
             
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed px-4">
-              Transforming ideas into intelligent solutions through 
-              <span className="text-blue-400 font-semibold"> cutting-edge AI</span>, 
-              <span className="text-purple-400 font-semibold"> machine learning</span>, and 
-              <span className="text-indigo-400 font-semibold"> scalable backend systems</span>
+            <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-light">
+              Transforming complex problems into intelligent solutions through 
+              <span className="text-blue-400 font-medium"> cutting-edge AI</span>, 
+              <span className="text-purple-400 font-medium"> machine learning</span>, and 
+              <span className="text-emerald-400 font-medium"> scalable systems</span>
             </p>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 px-4">
+          {/* Professional CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 px-4">
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-bold transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-blue-500/25 border-0"
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-10 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/25 border-0 group"
               onClick={() => scrollToSection('projects')}
             >
-              <Code className="mr-2" size={20} />
+              <Code className="mr-3" size={20} />
               Explore My Work
+              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-2 border-white/30 text-white hover:bg-white hover:text-slate-900 bg-white/10 backdrop-blur-sm px-8 py-4 text-lg font-bold transition-all duration-300 hover:scale-105"
+              className="border-2 border-gray-300/30 text-white hover:bg-white hover:text-slate-900 bg-white/5 backdrop-blur-sm px-10 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 hover:border-white/50"
               onClick={() => scrollToSection('contact')}
             >
-              <Mail className="mr-2" size={20} />
+              <Mail className="mr-3" size={20} />
               Let's Connect
             </Button>
           </div>
 
-          {/* Social Links */}
-          <div className="flex justify-center space-x-6 mb-12">
+          {/* Refined Social Links */}
+          <div className="flex justify-center space-x-8 mb-16">
             {[
-              { icon: Github, href: "https://github.com", label: "GitHub" },
-              { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-              { icon: Mail, href: "mailto:contact@example.com", label: "Email" }
-            ].map(({ icon: Icon, href, label }) => (
+              { icon: Github, href: "https://github.com", label: "GitHub", color: "hover:text-gray-300" },
+              { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn", color: "hover:text-blue-400" },
+              { icon: Mail, href: "mailto:contact@example.com", label: "Email", color: "hover:text-purple-400" }
+            ].map(({ icon: Icon, href, label, color }) => (
               <a
                 key={label}
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group p-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-110"
+                className={`group p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-110 ${color}`}
               >
-                <Icon size={24} className="text-white group-hover:text-blue-300 transition-colors" />
+                <Icon size={24} className="text-gray-400 group-hover:scale-110 transition-all duration-200" />
               </a>
             ))}
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown size={32} className="text-white/60" />
+        {/* Elegant Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+          <div className="flex flex-col items-center space-y-2 animate-bounce">
+            <span className="text-gray-400 text-sm font-medium">Scroll to explore</span>
+            <ChevronDown size={24} className="text-gray-400" />
+          </div>
         </div>
       </div>
     </section>

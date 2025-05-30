@@ -1,82 +1,109 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Brain, Lightbulb, Target, Rocket, Code2, Database, Cpu } from "lucide-react";
+import { Brain, Code2, Database, Rocket, Target, Award } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-slate-900 relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-64 h-64 border border-blue-500 rounded-full animate-pulse" />
-        <div className="absolute bottom-20 right-20 w-48 h-48 border border-purple-500 rounded-full animate-pulse" style={{ animationDelay: '1s' }} />
+    <section id="about" className="py-24 bg-white relative overflow-hidden">
+      {/* Subtle Background Pattern */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white">
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
-              About <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Me</span>
+        <div className="max-w-7xl mx-auto">
+          {/* Professional Section Header */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl mb-6">
+              <Target className="w-8 h-8 text-white" />
+            </div>
+            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+              About <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Me</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Bridging the gap between <span className="text-blue-400">artificial intelligence</span> and 
-              <span className="text-purple-400"> real-world solutions</span>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Passionate about creating intelligent solutions that bridge the gap between 
+              <span className="text-blue-600 font-semibold"> cutting-edge technology</span> and 
+              <span className="text-purple-600 font-semibold"> real-world impact</span>
             </p>
           </div>
 
-          {/* Main Content */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          {/* Enhanced Content Layout */}
+          <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
             {/* Left Content */}
-            <div className="space-y-6">
-              <h3 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Building Intelligence Into
-                <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                  Everyday Solutions
-                </span>
-              </h3>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                With hands-on experience in backend development, artificial intelligence, and product building, 
-                I love working on projects that blend innovation with practical value. Whether it's automating 
-                business processes, building AI-powered platforms, or deploying full-stack applications, 
-                I bring both creative energy and engineering discipline to the table.
-              </p>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                My expertise spans from designing intelligent backend systems to implementing cutting-edge 
-                AI/ML models for NLP, recommendation engines, and document processing solutions.
-              </p>
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <h3 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                  Building Intelligence Into
+                  <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mt-2">
+                    Everyday Solutions
+                  </span>
+                </h3>
+                <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full" />
+              </div>
+              
+              <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+                <p>
+                  With expertise spanning backend development, artificial intelligence, and product engineering, 
+                  I specialize in transforming complex challenges into elegant, scalable solutions that deliver 
+                  measurable business value.
+                </p>
+                <p>
+                  My approach combines deep technical knowledge with strategic thinking, ensuring that every 
+                  solution not only meets current needs but scales for future growth and innovation.
+                </p>
+              </div>
+
+              {/* Professional Stats */}
+              <div className="grid grid-cols-3 gap-6 pt-8">
+                {[
+                  { number: "50+", label: "Projects Delivered" },
+                  { number: "5+", label: "Years Experience" },
+                  { number: "100%", label: "Client Satisfaction" }
+                ].map((stat, index) => (
+                  <div key={index} className="text-center">
+                    <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                      {stat.number}
+                    </div>
+                    <div className="text-sm text-gray-600 font-medium mt-1">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
             </div>
 
-            {/* Right Content - Skills Highlight */}
-            <div className="space-y-4">
+            {/* Right Content - Enhanced Skills Cards */}
+            <div className="space-y-6">
               {[
                 {
                   icon: Brain,
-                  title: "AI/ML Development",
-                  desc: "NLP, embeddings, RAG systems, and intelligent agents",
-                  color: "from-blue-500 to-blue-600"
+                  title: "AI/ML Engineering",
+                  desc: "Advanced NLP, computer vision, and intelligent automation systems",
+                  gradient: "from-blue-500 to-blue-600",
+                  bg: "bg-blue-50"
                 },
                 {
                   icon: Code2,
-                  title: "Backend Engineering",
-                  desc: "Python, Django, Flask, and scalable system design",
-                  color: "from-purple-500 to-purple-600"
+                  title: "Backend Architecture",
+                  desc: "Scalable Python frameworks, API design, and system optimization",
+                  gradient: "from-purple-500 to-purple-600",
+                  bg: "bg-purple-50"
                 },
                 {
                   icon: Database,
                   title: "Data Solutions",
-                  desc: "Vector databases, embeddings, and semantic search",
-                  color: "from-indigo-500 to-indigo-600"
+                  desc: "Vector databases, semantic search, and intelligent data processing",
+                  gradient: "from-emerald-500 to-emerald-600",
+                  bg: "bg-emerald-50"
                 }
               ].map((skill, index) => (
-                <Card key={skill.title} className="bg-slate-800/50 border-slate-700 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300 hover:scale-105">
-                  <CardContent className="p-6">
-                    <div className="flex items-center space-x-4">
-                      <div className={`p-3 bg-gradient-to-r ${skill.color} rounded-xl`}>
-                        <skill.icon className="w-6 h-6 text-white" />
+                <Card key={skill.title} className={`${skill.bg} border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group`}>
+                  <CardContent className="p-8">
+                    <div className="flex items-start space-x-6">
+                      <div className={`p-4 bg-gradient-to-r ${skill.gradient} rounded-2xl group-hover:scale-110 transition-transform duration-300`}>
+                        <skill.icon className="w-8 h-8 text-white" />
                       </div>
-                      <div>
-                        <h4 className="font-bold text-white text-lg">{skill.title}</h4>
-                        <p className="text-gray-400 text-sm">{skill.desc}</p>
+                      <div className="flex-1">
+                        <h4 className="font-bold text-gray-900 text-xl mb-3">{skill.title}</h4>
+                        <p className="text-gray-700 leading-relaxed">{skill.desc}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -85,20 +112,21 @@ const About = () => {
             </div>
           </div>
 
-          {/* Mission Statement */}
-          <Card className="bg-gradient-to-r from-slate-800/80 to-slate-900/80 border-slate-700 backdrop-blur-sm shadow-2xl">
-            <CardContent className="p-8 text-center">
-              <div className="flex justify-center mb-6">
-                <div className="p-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full">
-                  <Rocket className="w-8 h-8 text-white" />
+          {/* Professional Mission Statement */}
+          <Card className="bg-gradient-to-r from-gray-900 via-slate-900 to-gray-900 border-0 shadow-2xl overflow-hidden">
+            <CardContent className="p-12 text-center relative">
+              <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px]" />
+              <div className="relative z-10">
+                <div className="inline-flex items-center justify-center p-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl mb-8">
+                  <Rocket className="w-10 h-10 text-white" />
                 </div>
+                <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">My Mission</h3>
+                <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+                  To leverage cutting-edge AI and robust engineering practices to create solutions that not only 
+                  meet today's challenges but anticipate tomorrow's opportunities, driving innovation and growth 
+                  for businesses and communities worldwide.
+                </p>
               </div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">My Mission</h3>
-              <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                To innovate, solve real-world problems, and bring smart AI-powered tools into everyday 
-                business and personal workflows. I aim to bridge the gap between intelligent backend 
-                systems and user-focused experiences that make a meaningful impact.
-              </p>
             </CardContent>
           </Card>
         </div>
