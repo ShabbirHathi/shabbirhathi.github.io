@@ -43,7 +43,6 @@ const AIBrain = () => {
         color="#FFFFFF"
         anchorX="center"
         anchorY="middle"
-        font="/fonts/Inter-Bold.woff"
       >
         AI Agent
       </Text>
@@ -69,7 +68,11 @@ const Particles = () => {
           (Math.random() - 0.5) * 10,
           (Math.random() - 0.5) * 10
         ]}>
-          <meshStandardMaterial color="#8B5CF6" opacity={0.6} transparent />
+          <meshStandardMaterial 
+            color="#8B5CF6" 
+            opacity={0.6} 
+            transparent 
+          />
         </Sphere>
       ))}
     </group>
