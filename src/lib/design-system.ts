@@ -46,7 +46,8 @@ export const designSystem = {
     card: "rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300",
     button: "px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105",
     iconContainer: "p-4 rounded-2xl shadow-lg",
-    sectionHeader: "text-center mb-16 md:mb-20"
+    sectionHeader: "text-center mb-16 md:mb-20",
+    cardPadding: "p-6 md:p-8"
   },
 
   // Animation Settings
