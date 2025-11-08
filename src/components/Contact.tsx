@@ -148,14 +148,14 @@ const Contact = () => {
                   <p className={`${designSystem.typography.body.normal} text-gray-400 mb-6`}>
                     {method.description}
                   </p>
-                  <Button 
-                    asChild
-                    className={`w-full bg-gradient-to-r ${method.gradient} ${designSystem.animations.hover} text-white ${designSystem.components.button}`}
+                  <a 
+                    href={method.href} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className={`inline-flex items-center justify-center w-full h-10 px-4 py-2 rounded-md text-sm font-semibold bg-gradient-to-r ${method.gradient} text-white ${designSystem.animations.hover} transition-all duration-300 hover:shadow-lg`}
                   >
-                    <a href={method.href} target="_blank" rel="noopener noreferrer">
-                      {method.action}
-                    </a>
-                  </Button>
+                    {method.action}
+                  </a>
                 </CardContent>
               </Card>
             ))}
