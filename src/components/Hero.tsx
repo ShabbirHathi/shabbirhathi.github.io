@@ -122,9 +122,9 @@ const Hero = () => {
           {/* Standardized Social Links */}
           <div className="flex justify-center space-x-8 mb-28">
             {[
-              { icon: Github, href: "https://github.com", label: "GitHub", color: "hover:text-gray-300" },
-              { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn", color: "hover:text-blue-400" },
-              { icon: Mail, href: "mailto:contact@example.com", label: "Email", color: "hover:text-purple-400" }
+              { icon: Github, href: "https://github.com/ShabbirHathi", label: "GitHub", color: "hover:text-gray-300" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/hathi-shabbir-a75509161/", label: "LinkedIn", color: "hover:text-blue-400" },
+              { icon: Mail, href: "mailto:shabbirhathi4@gmail.com", label: "Email", color: "hover:text-purple-400" }
             ].map(({ icon: Icon, href, label, color }) => (
               <a
                 key={label}

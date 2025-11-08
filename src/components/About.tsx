@@ -56,11 +56,11 @@ const About = () => {
 
               {/* Professional Stats */}
               <div className="grid grid-cols-3 gap-6 pt-8">
-                {[
-                  { number: "50+", label: "Projects Delivered" },
-                  { number: "5+", label: "Years Experience" },
-                  { number: "100%", label: "Client Satisfaction" }
-                ].map((stat, index) => (
+              {[
+                { number: "21+", label: "Projects Delivered" },
+                { number: "3+", label: "Years Experience" },
+                { number: "100%", label: "Client Satisfaction" }
+              ].map((stat, index) => (
                   <div key={index} className="text-center">
                     <div className={`text-3xl font-bold bg-gradient-to-r ${designSystem.colors.gradients.primary} bg-clip-text text-transparent`}>
                       {stat.number}

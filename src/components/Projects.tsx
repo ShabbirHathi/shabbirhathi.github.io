@@ -76,13 +76,6 @@ const ProjectCard = memo(({ project, index }: { project: any; index: number }) =
       <div className="flex space-x-3 pt-4">
         <Button 
           size="sm" 
-          className={`bg-gradient-to-r ${designSystem.colors.gradients.primary} hover:from-blue-700 hover:to-purple-700 text-white flex items-center space-x-2 ${designSystem.animations.hover} hover:shadow-lg hover:shadow-blue-500/25`}
-        >
-          <Github size={16} />
-          <span>View Code</span>
-        </Button>
-        <Button 
-          size="sm" 
           variant="outline"
           className="border-slate-600/50 text-gray-300 hover:bg-slate-700/50 hover:text-white hover:border-white/50 flex items-center space-x-2 transition-all duration-300 backdrop-blur-sm"
         >

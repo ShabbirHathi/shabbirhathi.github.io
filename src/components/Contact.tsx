@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, Github, MessageCircle, User, Briefcase, Send, Star } from "lucide-react";
+import { Mail, Linkedin, Github, MessageCircle, User, Briefcase, Send, Star, Phone, Calendar } from "lucide-react";
 import { designSystem } from "@/lib/design-system";
 
 const Contact = () => {
@@ -11,15 +11,23 @@ const Contact = () => {
       title: "Email",
       description: "For project inquiries and collaborations",
       action: "Send Email",
-      href: "mailto:contact@example.com",
+      href: "mailto:shabbirhathi4@gmail.com",
       gradient: designSystem.colors.gradients.primary
+    },
+    {
+      icon: Phone,
+      title: "Phone / WhatsApp",
+      description: "Call or message me directly",
+      action: "Contact",
+      href: "https://wa.me/919157725351",
+      gradient: designSystem.colors.gradients.accent
     },
     {
       icon: Linkedin,
       title: "LinkedIn",
       description: "Let's connect professionally",
       action: "Connect",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/hathi-shabbir-a75509161/",
       gradient: designSystem.colors.gradients.secondary
     },
     {
@@ -27,7 +35,7 @@ const Contact = () => {
       title: "GitHub",
       description: "Check out my code repositories",
       action: "View Profile",
-      href: "https://github.com",
+      href: "https://github.com/ShabbirHathi",
       gradient: "from-indigo-500 to-indigo-600"
     }
   ];
@@ -120,7 +128,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Methods */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {contactMethods.map((method, index) => (
               <Card 
                 key={method.title}
@@ -174,9 +182,19 @@ const Contact = () => {
                   asChild
                   className={`bg-gradient-to-r ${designSystem.colors.gradients.primary} ${designSystem.colors.gradients.primaryHover} text-white ${designSystem.components.button} font-bold ${designSystem.animations.hover}`}
                 >
-                  <a href="mailto:contact@example.com">
+                  <a href="mailto:shabbirhathi4@gmail.com">
                     <Mail className="mr-2" size={20} />
                     Start a Conversation
+                  </a>
+                </Button>
+                <Button 
+                  size="lg" 
+                  asChild
+                  className={`bg-gradient-to-r ${designSystem.colors.gradients.accent} hover:from-emerald-700 hover:to-emerald-800 text-white ${designSystem.components.button} font-bold ${designSystem.animations.hover}`}
+                >
+                  <a href="https://calendly.com/shabbirhathi4/30min" target="_blank" rel="noopener noreferrer">
+                    <Calendar className="mr-2" size={20} />
+                    Schedule Meeting
                   </a>
                 </Button>
                 <Button 
@@ -185,7 +203,7 @@ const Contact = () => {
                   asChild
                   className={`border-2 border-white/30 text-white hover:bg-white hover:text-slate-900 bg-white/10 backdrop-blur-sm ${designSystem.components.button} font-bold ${designSystem.animations.hover}`}
                 >
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/hathi-shabbir-a75509161/" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="mr-2" size={20} />
                     Connect on LinkedIn
                   </a>
@@ -200,7 +218,7 @@ const Contact = () => {
       <footer className="mt-20 pt-8 border-t border-slate-700">
         <div className={`text-center text-gray-400 ${designSystem.spacing.container}`}>
           <p className="mb-4">
-            © 2024 AI/ML Developer Portfolio. Built with passion for innovation.
+            © 2025 AI/ML Developer Portfolio. Built with passion for innovation.
           </p>
           <p className="text-sm">
             Bridging the gap between intelligent systems and meaningful solutions.
