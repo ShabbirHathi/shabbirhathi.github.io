@@ -72,17 +72,6 @@ const ProjectCard = memo(({ project, index }: { project: any; index: number }) =
         </div>
       </div>
 
-      {/* Action Buttons */}
-      <div className="flex space-x-3 pt-4">
-        <Button 
-          size="sm" 
-          variant="outline"
-          className="border-slate-600/50 text-gray-300 hover:bg-slate-700/50 hover:text-white hover:border-white/50 flex items-center space-x-2 transition-all duration-300 backdrop-blur-sm"
-        >
-          <ExternalLink size={16} />
-          <span>Live Demo</span>
-        </Button>
-      </div>
     </CardContent>
   </Card>
 ));

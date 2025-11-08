@@ -149,7 +149,7 @@ const Skills = () => {
                       <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-blue-500 rounded-full mr-4 group-hover:scale-125 transition-transform duration-300"></div>
                       AI-Powered Backend Systems
                     </h4>
-                    <ul className="space-y-4 text-gray-300">
+                    <ul className="space-y-4 text-gray-100">
                       {[
                         "Intelligent APIs with natural language processing",
                         "Machine learning model integration and deployment", 
@@ -170,7 +170,7 @@ const Skills = () => {
                       <div className="w-3 h-3 bg-gradient-to-r from-purple-400 to-purple-500 rounded-full mr-4 group-hover:scale-125 transition-transform duration-300"></div>
                       Enterprise Solutions
                     </h4>
-                    <ul className="space-y-4 text-gray-300">
+                    <ul className="space-y-4 text-gray-100">
                       {[
                         "Scalable architecture design and implementation",
                         "Performance optimization and monitoring",

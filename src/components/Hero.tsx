@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Code, ChevronDown, Sparkles, Brain, Zap, ArrowRight } from "lucide-react";
+import { Code, ChevronDown, Sparkles, Brain, Zap, ArrowRight, Mail } from "lucide-react";
 import { useEffect, useState } from "react";
 import { designSystem } from "@/lib/design-system";
 
@@ -119,24 +119,6 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Standardized Social Links */}
-          <div className="flex justify-center space-x-8 mb-28">
-            {[
-              { icon: Github, href: "https://github.com/ShabbirHathi", label: "GitHub", color: "hover:text-gray-300" },
-              { icon: Linkedin, href: "https://www.linkedin.com/in/hathi-shabbir-a75509161/", label: "LinkedIn", color: "hover:text-blue-400" },
-              { icon: Mail, href: "mailto:shabbirhathi4@gmail.com", label: "Email", color: "hover:text-purple-400" }
-            ].map(({ icon: Icon, href, label, color }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`group p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/20 ${designSystem.animations.hover} ${color}`}
-              >
-                <Icon size={24} className="text-gray-400 group-hover:scale-110 transition-all duration-200" />
-              </a>
-            ))}
-          </div>
         </div>
 
         {/* Fixed Scroll Indicator with Proper Spacing */}
