@@ -124,7 +124,7 @@ const Skills = () => {
           </div>
 
           {/* Enhanced Professional Capabilities Section */}
-          <Card className={`bg-gradient-to-br ${designSystem.colors.backgrounds.dark} border-0 shadow-2xl overflow-hidden relative ${designSystem.components.card}`}>
+          <Card className={`bg-gradient-to-br from-slate-900 to-slate-800 border-0 shadow-2xl overflow-hidden relative ${designSystem.components.card}`}>
             <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px]" />
             <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${designSystem.colors.gradients.primary}`} />
             
