@@ -2,7 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, Brain, Calendar, Heart, Bus, FileText, CreditCard, Sparkles, Code2, Rocket, Star } from "lucide-react";
+import { ExternalLink, Github, Brain, Calendar, Heart, Bus, FileText, CreditCard, Sparkles, Code2, Rocket, Star, Database, BotMessageSquare, TrendingUp, MessageSquare, Shield, Globe } from "lucide-react";
 import { memo } from "react";
 import { designSystem } from "@/lib/design-system";
 
@@ -118,6 +118,63 @@ const Projects = () => {
           gradient: "from-pink-500 to-rose-600"
         }
       ]
+    },
+    {
+      name: "iRoid Solution",
+      duration: "1+ years",
+      projects: [
+        {
+          title: "AI Knowledge Assistant",
+          description: "Built RAG-based knowledge assistant supporting multiple file uploads. Implemented chunking strategy, vector database integration, citation features, and source highlighting for retrieved information.",
+          icon: Database,
+          tags: ["Flask", "LLM", "RAG", "LangChain", "Vector DB"],
+          highlights: ["RAG implementation", "Citation feature", "Multi-file support"],
+          gradient: "from-indigo-500 to-purple-600"
+        },
+        {
+          title: "AI Agent for Event Planning",
+          description: "Developed intelligent AI agent for event planning and service provider recommendations. Integrated weather API, custom function execution, and dynamic prompt engineering based on user queries.",
+          icon: BotMessageSquare,
+          tags: ["Django", "LangChain", "AI Agent", "API Integration"],
+          highlights: ["Multi-function agent", "Weather integration", "Dynamic execution"],
+          gradient: designSystem.colors.gradients.secondary
+        },
+        {
+          title: "Predictive Impact Analysis",
+          description: "Created predictive analytics system for business/external KPIs and internal/learning KPIs. Implemented data cleaning, normalization, and automated regression model selection for best performance.",
+          icon: TrendingUp,
+          tags: ["Flask", "Regression Models", "Data Science", "ML"],
+          highlights: ["Multiple regression models", "Data preprocessing", "Auto model selection"],
+          gradient: "from-blue-600 to-cyan-600"
+        }
+      ]
+    }
+  ];
+
+  const otherProjects = [
+    {
+      title: "SupportJoy",
+      description: "AI-powered chatbot service providing intelligent customer support solutions with natural language processing capabilities.",
+      icon: MessageSquare,
+      tags: ["AI Chatbot", "NLP", "Customer Support"],
+      highlights: ["AI-powered", "Real-time support", "Multi-channel"],
+      gradient: "from-green-500 to-emerald-600"
+    },
+    {
+      title: "Priveguard",
+      description: "Privacy protection solution ensuring data security and compliance with modern privacy standards.",
+      icon: Shield,
+      tags: ["Security", "Privacy", "Data Protection"],
+      highlights: ["Data security", "Privacy compliance", "Protection tools"],
+      gradient: "from-red-500 to-orange-600"
+    },
+    {
+      title: "Informative Websites",
+      description: "Developed professional websites for various industries including hardware stores and travel services, focusing on user experience and information architecture.",
+      icon: Globe,
+      tags: ["Web Development", "UI/UX", "Business Sites"],
+      highlights: ["Hardware store", "Travel pages", "Responsive design"],
+      gradient: "from-violet-500 to-purple-600"
     }
   ];
 
@@ -186,6 +243,29 @@ const Projects = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Other Projects Section */}
+          <div className="space-y-8 mb-20">
+            <div className="text-center mb-12">
+              <h3 className={`${designSystem.typography.headings.h3} text-white mb-2`}>
+                Other Projects
+              </h3>
+              <p className="text-sm text-gray-400 italic">
+                Personal & Independent Work
+              </p>
+              <div className={`w-16 h-0.5 bg-gradient-to-r ${designSystem.colors.gradients.primary} rounded-full mx-auto mt-4`} />
+            </div>
+
+            <div className="grid lg:grid-cols-3 gap-8">
+              {otherProjects.map((project, index) => (
+                <ProjectCard 
+                  key={project.title} 
+                  project={project} 
+                  index={100 + index} 
+                />
+              ))}
+            </div>
           </div>
 
           {/* Enhanced Call to Action */}
