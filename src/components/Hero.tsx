@@ -66,15 +66,18 @@ const Hero = () => {
           {/* Enhanced Typography with Design System */}
           <div className={designSystem.spacing.elementGap}>
             <div className="space-y-6">
-              <h1 className={`${designSystem.typography.headings.h1} mb-6`}>
-                <span className="bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent">
-                  AI/ML
-                </span>
-                <br />
-                <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
-                  Developer
-                </span>
-              </h1>
+              <div className="mb-4">
+                <h1 className={`${designSystem.typography.headings.h1} mb-2`}>
+                  <span className="bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent">
+                    Shabbir Hathi
+                  </span>
+                </h1>
+                <p className="text-2xl md:text-3xl text-gray-300">
+                  <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent font-semibold">
+                    AI/ML Developer
+                  </span>
+                </p>
+              </div>
               
               <div className="flex items-center justify-center space-x-6 text-lg md:text-xl text-gray-300">
                 <div className="flex items-center space-x-2">

@@ -107,9 +107,9 @@ const Contact = () => {
               {collaborationTypes.map((type, index) => (
                 <Card 
                   key={type.title}
-                  className={`text-center bg-slate-900/50 border-slate-700 backdrop-blur-sm hover:bg-slate-900/70 ${designSystem.animations.hover} group ${designSystem.components.card}`}
+                  className={`text-center bg-slate-900/50 border-slate-700 backdrop-blur-sm hover:bg-slate-900/70 ${designSystem.animations.hover} group ${designSystem.components.card} flex flex-col h-full`}
                 >
-                  <CardContent className={designSystem.components.cardPadding}>
+                  <CardContent className={`${designSystem.components.cardPadding} flex flex-col h-full`}>
                     <div className="flex justify-center mb-4">
                       <div className={`${designSystem.components.iconContainer} bg-gradient-to-r ${type.gradient} group-hover:scale-110 transition-transform duration-300`}>
                         <type.icon className="w-8 h-8 text-white" />
@@ -118,7 +118,7 @@ const Contact = () => {
                     <h4 className={`${designSystem.typography.headings.h4} text-white mb-2 group-hover:text-blue-300 transition-colors`}>
                       {type.title}
                     </h4>
-                    <p className={`${designSystem.typography.body.normal} text-gray-400`}>
+                    <p className={`${designSystem.typography.body.normal} text-gray-400 flex-grow`}>
                       {type.description}
                     </p>
                   </CardContent>
@@ -132,7 +132,7 @@ const Contact = () => {
             {contactMethods.map((method, index) => (
               <Card 
                 key={method.title}
-                className={`bg-slate-900/50 border-slate-700 backdrop-blur-sm hover:bg-slate-900/70 ${designSystem.animations.hover} group ${designSystem.components.card}`}
+                className={`bg-slate-900/50 border-slate-700 backdrop-blur-sm hover:bg-slate-900/70 ${designSystem.animations.hover} group ${designSystem.components.card} flex flex-col h-full`}
               >
                 <CardHeader className="text-center pb-4 p-6">
                   <div className="flex justify-center mb-4">
@@ -144,15 +144,15 @@ const Contact = () => {
                     {method.title}
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="text-center p-6 pt-0">
-                  <p className={`${designSystem.typography.body.normal} text-gray-400 mb-6`}>
+                <CardContent className="text-center p-6 pt-0 flex flex-col flex-grow">
+                  <p className={`${designSystem.typography.body.normal} text-gray-400 mb-6 flex-grow`}>
                     {method.description}
                   </p>
                   <a 
                     href={method.href} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className={`inline-flex items-center justify-center w-full h-10 px-4 py-2 rounded-md text-sm font-semibold bg-gradient-to-r ${method.gradient} text-white ${designSystem.animations.hover} transition-all duration-300 hover:shadow-lg`}
+                    className={`inline-flex items-center justify-center w-full h-10 px-4 py-2 rounded-md text-sm font-semibold bg-gradient-to-r ${method.gradient} text-white ${designSystem.animations.hover} transition-all duration-300 hover:shadow-lg mt-auto`}
                   >
                     {method.action}
                   </a>

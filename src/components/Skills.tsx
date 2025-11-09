@@ -149,7 +149,7 @@ const Skills = () => {
                       <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-blue-500 rounded-full mr-4 group-hover:scale-125 transition-transform duration-300"></div>
                       AI-Powered Backend Systems
                     </h4>
-                    <ul className="space-y-4 text-gray-100">
+                    <ul className="space-y-4 text-gray-300">
                       {[
                         "Intelligent APIs with natural language processing",
                         "Machine learning model integration and deployment", 
@@ -158,7 +158,7 @@ const Skills = () => {
                       ].map((item, index) => (
                         <li key={index} className="flex items-start space-x-3 group">
                           <span className="text-blue-400 mt-2 text-sm group-hover:scale-125 transition-transform duration-200">●</span>
-                          <span className="leading-relaxed group-hover:text-white transition-colors duration-200">{item}</span>
+                          <span className="leading-relaxed group-hover:text-gray-100 transition-colors duration-200">{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -170,7 +170,7 @@ const Skills = () => {
                       <div className="w-3 h-3 bg-gradient-to-r from-purple-400 to-purple-500 rounded-full mr-4 group-hover:scale-125 transition-transform duration-300"></div>
                       Enterprise Solutions
                     </h4>
-                    <ul className="space-y-4 text-gray-100">
+                    <ul className="space-y-4 text-gray-300">
                       {[
                         "Scalable architecture design and implementation",
                         "Performance optimization and monitoring",
@@ -179,7 +179,7 @@ const Skills = () => {
                       ].map((item, index) => (
                         <li key={index} className="flex items-start space-x-3 group">
                           <span className="text-purple-400 mt-2 text-sm group-hover:scale-125 transition-transform duration-200">●</span>
-                          <span className="leading-relaxed group-hover:text-white transition-colors duration-200">{item}</span>
+                          <span className="leading-relaxed group-hover:text-gray-100 transition-colors duration-200">{item}</span>
                         </li>
                       ))}
                     </ul>
