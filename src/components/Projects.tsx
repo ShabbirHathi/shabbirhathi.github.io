@@ -79,54 +79,45 @@ const ProjectCard = memo(({ project, index }: { project: any; index: number }) =
 ProjectCard.displayName = 'ProjectCard';
 
 const Projects = () => {
-  const projects = [
+  const companies = [
     {
-      title: "AI-Powered Learning Management System",
-      description: "Comprehensive LMS allowing admins to upload learning materials and auto-generate MCQ exams using OpenAI APIs. Features document upload, multilingual support, performance tracking, and automated certificate generation.",
-      icon: Brain,
-      tags: ["OpenAI API", "Django", "PostgreSQL", "MCQ Generation", "Multilingual"],
-      highlights: ["Auto-generated exams", "Performance analytics", "Certificate system"],
-      gradient: designSystem.colors.gradients.primary
-    },
-    {
-      title: "Smart Event Planning Agent",
-      description: "Intelligent AI assistant with comprehensive event planning features including multilingual support, automated checklist generation, event discovery, budget optimization, and integrated booking system.",
-      icon: Calendar,
-      tags: ["AI Agent", "Multilingual", "Budget Planning", "Event Discovery", "Booking System"],
-      highlights: ["AI-powered planning", "Smart budgeting", "Automated workflows"],
-      gradient: designSystem.colors.gradients.secondary
-    },
-    {
-      title: "Personalized Greeting Generator",
-      description: "Creative platform enabling users to create custom greetings with photos, quotes, and music. Built with Django backend and interactive frontend, featuring shareable URLs and personalization options.",
-      icon: Heart,
-      tags: ["Django", "JavaScript", "File Upload", "URL Sharing", "Customization"],
-      highlights: ["Photo integration", "Music support", "Shareable links"],
-      gradient: "from-pink-500 to-rose-600"
-    },
-    {
-      title: "Bus Transport AI System (R&D)",
-      description: "Exploratory AI solution for transportation optimization. Predicts maintenance needs, analyzes passenger trends, and optimizes routes using sensor data and historical logs for improved efficiency.",
-      icon: Bus,
-      tags: ["Predictive Analytics", "Route Optimization", "Sensor Data", "Trend Analysis"],
-      highlights: ["Predictive maintenance", "Route optimization", "Data analysis"],
-      gradient: designSystem.colors.gradients.accent
-    },
-    {
-      title: "AI Document Embedder",
-      description: "Sophisticated background job system for document processing and semantic search. Uses LangChain and ChromaDB to embed and index documents with both OpenAI and Mistral models for enhanced search capabilities.",
-      icon: FileText,
-      tags: ["LangChain", "ChromaDB", "Embeddings", "Semantic Search", "Background Jobs"],
-      highlights: ["Vector embeddings", "Semantic search", "Multi-model support"],
-      gradient: "from-indigo-500 to-indigo-600"
-    },
-    {
-      title: "Stripe Payment Integration",
-      description: "Robust payment backend with seamless Stripe integration for service-based platforms. Features secure payment processing, subscription management, and comprehensive API endpoints for e-commerce solutions.",
-      icon: CreditCard,
-      tags: ["Stripe API", "Payment Processing", "Security", "Subscriptions", "REST API"],
-      highlights: ["Secure payments", "Subscription support", "Scalable architecture"],
-      gradient: designSystem.colors.gradients.warning
+      name: "Differenze System",
+      duration: "1 year 9 months",
+      projects: [
+        {
+          title: "AI-based Dog Breed Identifier",
+          description: "Developed backend APIs and trained AI model for dog breed detection. Users upload image or video, system detects dog, extracts frame, and runs ML model to predict breed with 95% accuracy. 10k+ downloads.",
+          icon: Brain,
+          tags: ["Django", "OpenCV", "Pre-trained Model", "Computer Vision"],
+          highlights: ["95% accuracy", "10k+ downloads", "Video processing"],
+          gradient: designSystem.colors.gradients.primary,
+          link: "" // Will be added later
+        },
+        {
+          title: "ESPN Data Scraping",
+          description: "Built data scraping system for NBA and NCAA statistics through APIs and web scraping. Implemented automated cron jobs for scheduled data collection and database updates.",
+          icon: Code2,
+          tags: ["Django", "Selenium", "BeautifulSoup", "Cron Jobs"],
+          highlights: ["Automated scraping", "NBA & NCAA data", "Scheduled updates"],
+          gradient: designSystem.colors.gradients.secondary
+        },
+        {
+          title: "Recommendation System",
+          description: "Developed comprehensive recommendation APIs with data cleaning using pandas and numpy. Implemented cosine similarity for user-based, product-based, and apriori recommendations.",
+          icon: Sparkles,
+          tags: ["Django", "Pandas", "NumPy", "Scikit-learn", "Cosine Similarity"],
+          highlights: ["Multiple recommendation types", "Data cleaning", "Advanced algorithms"],
+          gradient: "from-emerald-500 to-emerald-600"
+        },
+        {
+          title: "Textile Pattern Image Generator",
+          description: "Trained Stable Diffusion model on textile images to generate floral and abstract designs. Implemented magic prompt feature, PSD export, and virtual try-on for different dresses.",
+          icon: Sparkles,
+          tags: ["Django", "Stable Diffusion", "OpenCV", "Image Generation"],
+          highlights: ["AI-generated patterns", "PSD export", "Virtual try-on"],
+          gradient: "from-pink-500 to-rose-600"
+        }
+      ]
     }
   ];
 
@@ -168,10 +159,32 @@ const Projects = () => {
             </p>
           </div>
 
-          {/* Projects Grid */}
-          <div className="grid lg:grid-cols-2 gap-8 mb-20">
-            {projects.map((project, index) => (
-              <ProjectCard key={project.title} project={project} index={index} />
+          {/* Companies and Projects */}
+          <div className="space-y-16 mb-20">
+            {companies.map((company, companyIndex) => (
+              <div key={company.name} className="space-y-8">
+                {/* Company Header */}
+                <div className="text-center mb-12">
+                  <h3 className={`${designSystem.typography.headings.h3} text-white mb-2`}>
+                    {company.name}
+                  </h3>
+                  <p className="text-sm text-gray-400 italic">
+                    Worked here • {company.duration}
+                  </p>
+                  <div className={`w-16 h-0.5 bg-gradient-to-r ${designSystem.colors.gradients.primary} rounded-full mx-auto mt-4`} />
+                </div>
+
+                {/* Projects Grid for this company */}
+                <div className="grid lg:grid-cols-2 gap-8">
+                  {company.projects.map((project, projectIndex) => (
+                    <ProjectCard 
+                      key={project.title} 
+                      project={project} 
+                      index={companyIndex * 10 + projectIndex} 
+                    />
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
 
