@@ -218,7 +218,7 @@ const Contact = () => {
       <footer className="mt-20 pt-8 border-t border-slate-700">
         <div className={`text-center text-gray-400 ${designSystem.spacing.container}`}>
           <p className="mb-4">
-            © 2025 AI/ML Developer Portfolio. Built with passion for innovation.
+            © 2025 Shabbir Hathi. Built with passion for innovation.
           </p>
           <p className="text-sm">
             Bridging the gap between intelligent systems and meaningful solutions.
