@@ -86,35 +86,35 @@ const Projects = () => {
       projects: [
         {
           title: "AI-based Dog Breed Identifier",
-          description: "Developed backend APIs and trained AI model for dog breed detection. Users upload image or video, system detects dog, extracts frame, and runs ML model to predict breed with 95% accuracy. 10k+ downloads.",
+          description: "Developed comprehensive AI-powered dog breed identification system using Django REST Framework and advanced computer vision. Combines YOLO object detection with custom-trained ML models to identify breeds from images/videos with 95%+ accuracy across 170+ breeds. Served 10K+ users with 4.6-star rating.",
           icon: Brain,
-          tags: ["Django", "OpenCV", "Pre-trained Model", "Computer Vision"],
-          highlights: ["95% accuracy", "10k+ downloads", "Video processing"],
+          tags: ["Django REST", "YOLO", "TensorFlow", "Computer Vision", "OpenCV", "ML Training"],
+          highlights: ["95%+ accuracy", "170+ breeds", "10K+ downloads", "4.6★ rating", "Two-stage AI system"],
           gradient: designSystem.colors.gradients.primary,
           link: "" // Will be added later
         },
         {
-          title: "ESPN Data Scraping",
-          description: "Built data scraping system for NBA and NCAA statistics through APIs and web scraping. Implemented automated cron jobs for scheduled data collection and database updates.",
+          title: "ESPN Basketball Data Scraping",
+          description: "Built automated web scraping system for ESPN basketball data collection, combining API integration and web scraping for NBA and NCAA statistics. Implemented MySQL database storage with automated scheduling via cron jobs and CSV backup functionality for data redundancy.",
           icon: Code2,
-          tags: ["Django", "Selenium", "BeautifulSoup", "Cron Jobs"],
-          highlights: ["Automated scraping", "NBA & NCAA data", "Scheduled updates"],
+          tags: ["Python", "BeautifulSoup", "Selenium", "MySQL", "Cron Jobs", "API Integration"],
+          highlights: ["Hybrid API + scraping", "Automated scheduling", "NBA & NCAA data", "CSV backups"],
           gradient: designSystem.colors.gradients.secondary
         },
         {
           title: "Recommendation System",
-          description: "Developed comprehensive recommendation APIs with data cleaning using pandas and numpy. Implemented cosine similarity for user-based, product-based, and apriori recommendations.",
+          description: "Developed comprehensive product recommendation APIs using Django REST Framework. Built data cleaning pipeline with Pandas/NumPy and implemented multiple recommendation algorithms: cosine similarity for user-based and item-based filtering, plus Apriori algorithm for association rule mining.",
           icon: Sparkles,
-          tags: ["Django", "Pandas", "NumPy", "Scikit-learn", "Cosine Similarity"],
-          highlights: ["Multiple recommendation types", "Data cleaning", "Advanced algorithms"],
+          tags: ["Django REST", "Pandas", "NumPy", "Scikit-learn", "Cosine Similarity", "Apriori Algorithm"],
+          highlights: ["Multi-algorithm approach", "Data preprocessing", "User & item-based recommendations", "Association rules"],
           gradient: "from-emerald-500 to-emerald-600"
         },
         {
-          title: "Textile Pattern Image Generator",
-          description: "Trained Stable Diffusion model on textile images to generate floral and abstract designs. Implemented magic prompt feature, PSD export, and virtual try-on for different dresses.",
+          title: "Textile Pattern GenAI Platform",
+          description: "Built GenAI platform using fine-tuned Stable Diffusion for textile pattern generation (floral, abstract, seamless). Implemented PSD-layered outputs for color editing, magic prompt feature, negative prompts, and try-on preview pipeline for garments like sarees. Includes color adjustment APIs.",
           icon: Sparkles,
-          tags: ["Django", "Stable Diffusion", "OpenCV", "Image Generation"],
-          highlights: ["AI-generated patterns", "PSD export", "Virtual try-on"],
+          tags: ["Django", "Stable Diffusion", "PyTorch", "PSD Layers", "Celery", "Redis", "Computer Vision"],
+          highlights: ["Fine-tuned SD model", "PSD export", "Try-on previews", "Magic prompts", "Color variations"],
           gradient: "from-pink-500 to-rose-600"
         }
       ]
