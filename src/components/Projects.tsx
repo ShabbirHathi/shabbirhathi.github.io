@@ -125,26 +125,34 @@ const Projects = () => {
       projects: [
         {
           title: "AI Knowledge Assistant",
-          description: "Built RAG-based knowledge assistant supporting multiple file uploads. Implemented chunking strategy, vector database integration, citation features, and source highlighting for retrieved information.",
+          description: "Production-grade Flask backend with RAG using Qdrant, LangChain, and multi-provider LLM routing (OpenAI, Mistral, Cohere, AWS Bedrock). Built modular ingestion for PDFs, PPTX, Excel, URLs, and Notion with WebSocket streaming, Celery workers, and Redis caching. Reduced chat latency by 35% and token costs by 22%.",
           icon: Database,
-          tags: ["Flask", "LLM", "RAG", "LangChain", "Vector DB"],
-          highlights: ["RAG implementation", "Citation feature", "Multi-file support"],
+          tags: ["Flask", "LangChain", "Qdrant", "Socket.IO", "Celery", "Redis", "MySQL", "RAG"],
+          highlights: ["Multi-provider LLM", "WebSocket streaming", "35% faster", "Citation & highlighting", "Provider failover"],
           gradient: "from-indigo-500 to-purple-600"
         },
         {
-          title: "AI Agent for Event Planning",
-          description: "Developed intelligent AI agent for event planning and service provider recommendations. Integrated weather API, custom function execution, and dynamic prompt engineering based on user queries.",
+          title: "Wenue AI Event Planning Agent (Eva)",
+          description: "Built LangChain-powered AI agent for end-to-end event planning with real-time chat via Flask-SocketIO. Integrated 10 agent tools including venue/service discovery, budgeting, timelines, seating, marketing, analytics, and weather forecasting. Delivered Streamlit UI and RESTful message pagination with SQLAlchemy persistence.",
           icon: BotMessageSquare,
-          tags: ["Django", "LangChain", "AI Agent", "API Integration"],
-          highlights: ["Multi-function agent", "Weather integration", "Dynamic execution"],
+          tags: ["Flask", "LangChain", "Socket.IO", "OpenAI GPT-4.1", "Streamlit", "SQLAlchemy", "ChromaDB"],
+          highlights: ["10 agent tools", "Real-time chat", "Multi-platform integration", "Weather forecasting", "Cultural awareness"],
           gradient: designSystem.colors.gradients.secondary
         },
         {
-          title: "Predictive Impact Analysis",
-          description: "Created predictive analytics system for business/external KPIs and internal/learning KPIs. Implemented data cleaning, normalization, and automated regression model selection for best performance.",
+          title: "Vector Database API",
+          description: "Docker-ready Flask service managing vector embeddings and contextual retrieval. Supports multi-provider embeddings (OpenAI, Cohere, Mistral, AWS) via LangChain with Chroma persistence and optional secured Qdrant behind Nginx. Features contextual compression retriever with <200ms p95 latency and 1M+ chunks per deployment.",
+          icon: Database,
+          tags: ["Flask", "LangChain", "ChromaDB", "Qdrant", "Docker", "Nginx", "RAG"],
+          highlights: ["<200ms p95 latency", "Multi-provider support", "Contextual compression", "Dockerized deployment", "1M+ chunks"],
+          gradient: "from-violet-500 to-indigo-600"
+        },
+        {
+          title: "Impact Analysis (LMS ➜ Business KPIs)",
+          description: "Built ML service connecting LMS KPIs to business outcomes with configurable time-delay alignment. Implemented end-to-end pipeline: merge, time-shift, clean (IQR outliers), encode, normalize, and evaluate 6 regression families via 5-fold CV. Returns leaderboard metrics, explainability (coefficients/importances), and chart-ready JSON.",
           icon: TrendingUp,
-          tags: ["Flask", "Regression Models", "Data Science", "ML"],
-          highlights: ["Multiple regression models", "Data preprocessing", "Auto model selection"],
+          tags: ["Flask", "Scikit-learn", "Pandas", "NumPy", "Regression", "Swagger/OpenAPI"],
+          highlights: ["6 regression models", "5-fold CV", "60% faster analysis", "Time-shift alignment", "Explainability output"],
           gradient: "from-blue-600 to-cyan-600"
         }
       ]
