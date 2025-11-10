@@ -161,27 +161,29 @@ const Projects = () => {
 
   const otherProjects = [
     {
-      title: "SupportJoy",
-      description: "AI-powered chatbot service providing intelligent customer support solutions with natural language processing capabilities.",
+      title: "SupportJoy AI Chatbot SaaS",
+      description: "Complete AI chatbot SaaS platform with RAG implementation, Stripe payments, and magic link authentication. Built user dashboard with data ingestion from URLs and files (PDF, TXT, DOC, PPT), embeddable widget for customer websites, and comprehensive chat history with appearance customization and token tracking.",
       icon: MessageSquare,
-      tags: ["AI Chatbot", "NLP", "Customer Support"],
-      highlights: ["AI-powered", "Real-time support", "Multi-channel"],
-      gradient: "from-green-500 to-emerald-600"
+      tags: ["Django", "Bootstrap", "Stripe", "RAG", "Web Scraping", "Embeddings", "SaaS"],
+      highlights: ["RAG system", "Embeddable widget", "Magic link auth", "Multi-format upload", "Token tracking"],
+      gradient: "from-green-500 to-emerald-600",
+      link: "https://supportjoy.ai/"
     },
     {
-      title: "Priveguard",
-      description: "Privacy protection solution ensuring data security and compliance with modern privacy standards.",
+      title: "PriveGuard Anti-Piracy SaaS",
+      description: "Comprehensive SaaS platform for digital creators to protect products from piracy. Built dual-application architecture with Django user dashboard and Streamlit+Flask admin tools. Integrated Stripe payments, SerpAPI for automated piracy detection, domain whitelisting, and monthly analytics reporting.",
       icon: Shield,
-      tags: ["Security", "Privacy", "Data Protection"],
-      highlights: ["Data security", "Privacy compliance", "Protection tools"],
-      gradient: "from-red-500 to-orange-600"
+      tags: ["Django", "Streamlit", "Flask", "Stripe", "SerpAPI", "Jinja2", "SaaS"],
+      highlights: ["Automated detection", "Dual architecture", "Domain whitelist", "Monthly reports", "Piracy tracking"],
+      gradient: "from-red-500 to-orange-600",
+      link: "https://priveguard.com/"
     },
     {
-      title: "Informative Websites",
-      description: "Developed professional websites for various industries including hardware stores and travel services, focusing on user experience and information architecture.",
+      title: "Informative Product Websites",
+      description: "Developed 3+ product showcase websites with standardized architecture using React and Django. Built reusable components, responsive designs optimized for mobile/desktop, product galleries, and contact forms. Projects include hardware products, water purifier systems, and Coach Moi.",
       icon: Globe,
-      tags: ["Web Development", "UI/UX", "Business Sites"],
-      highlights: ["Hardware store", "Travel pages", "Responsive design"],
+      tags: ["React", "Django", "Bootstrap", "SQLite", "Responsive Design"],
+      highlights: ["3+ websites", "Reusable components", "Product catalogs", "Contact forms", "Mobile optimized"],
       gradient: "from-violet-500 to-purple-600"
     }
   ];
