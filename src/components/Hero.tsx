@@ -101,7 +101,7 @@ const Hero = () => {
           </div>
 
           {/* Consistent CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-20 px-4">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-32 px-4">
             <Button 
               size="lg" 
               className={`bg-gradient-to-r ${designSystem.colors.gradients.primary} hover:from-blue-700 hover:to-blue-800 text-white ${designSystem.components.button} shadow-lg hover:shadow-blue-500/25 border-0 group`}
