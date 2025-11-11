@@ -19,17 +19,17 @@ export const designSystem = {
   // Color Palette
   colors: {
     gradients: {
-      primary: "from-blue-600 to-purple-600",
-      primaryHover: "from-blue-700 to-purple-700",
-      secondary: "from-blue-500 to-purple-500",
-      accent: "from-emerald-500 to-emerald-600",
+      primary: "from-slate-700 to-slate-800",
+      primaryHover: "from-slate-800 to-slate-900",
+      secondary: "from-slate-600 to-slate-700",
+      accent: "from-slate-500 to-slate-600",
       warning: "from-orange-500 to-red-600"
     },
     backgrounds: {
       light: "bg-gray-50",
       lightCard: "bg-white",
-      dark: "bg-slate-900",
-      darkCard: "bg-slate-800/60"
+      dark: "bg-slate-800",
+      darkCard: "bg-slate-700/50"
     }
   },
 
@@ -43,16 +43,16 @@ export const designSystem = {
 
   // Component Patterns
   components: {
-    card: "rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300",
-    button: "px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105",
-    iconContainer: "p-4 rounded-2xl shadow-lg",
-    sectionHeader: "text-center mb-16 md:mb-20",
+    card: "rounded-lg shadow-sm hover:shadow-md transition-all duration-200",
+    button: "px-6 py-2.5 rounded-md font-medium transition-all duration-200",
+    iconContainer: "p-3 rounded-lg shadow-sm",
+    sectionHeader: "text-center mb-12 md:mb-16",
     cardPadding: "p-6 md:p-8"
   },
 
   // Animation Settings
   animations: {
-    hover: "hover:scale-105 transition-all duration-300",
+    hover: "hover:translate-y-[-2px] transition-all duration-200",
     fadeIn: "opacity-0 animate-fade-in",
     reduced: "motion-reduce:animate-none motion-reduce:transition-none"
   }
