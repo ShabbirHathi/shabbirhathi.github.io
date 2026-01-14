@@ -64,11 +64,13 @@ export const portfolioData = {
       id: "freelancing-projects",
       company: "Freelance Projects",
       title: "Full‑Stack Developer",
-      period: "Jun 2023 - Dec 2024",
+      period: "Jun 2023 - Present",
       impact: [
         "Built AI chatbot SaaS with RAG, embeddable widgets, and Stripe integration",
         "Developed anti‑piracy SaaS platform with automated detection and admin tools",
         "Created multiple informative product websites with React + Django architecture",
+        "Delivered custom AI solutions for clients across various industries",
+        "Developed data scraping and automation tools for business intelligence",
       ],
       tech: ["Django", "React", "Stripe", "RAG", "Embeddings", "SerpAPI", "Bootstrap", "JavaScript"],
     },
@@ -227,7 +229,8 @@ export const portfolioData = {
 
   contacts: {
     email: "shabbirhathi4@gmail.com",
-    phone: "+91-9157725351",
+    phone: "+91 91577 25351",
+    whatsapp: "https://wa.me/919157725351",
     github: "https://github.com/shabbirhathi",
     linkedin: "https://www.linkedin.com/in/shabbir-hathi-54704a17b/",
     website: "",
