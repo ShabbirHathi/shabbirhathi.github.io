@@ -15,7 +15,7 @@ export const portfolioData = {
       github: "https://github.com/shabbirhathi",
       linkedin: "https://www.linkedin.com/in/shabbir-hathi-54704a17b/",
       website: "",
-      calendly: "",
+      calendly: "https://calendly.com/shabbirhathi4/30min",
     },
     availability: "open_to_work",
     rolesOfInterest: ["AI Engineer", "ML Engineer", "Full-stack (AI)", "Backend Engineer"],
@@ -234,7 +234,7 @@ export const portfolioData = {
     github: "https://github.com/shabbirhathi",
     linkedin: "https://www.linkedin.com/in/shabbir-hathi-54704a17b/",
     website: "",
-    calendly: "",
+    calendly: "https://calendly.com/shabbirhathi4/30min",
   },
 
   footer: {
