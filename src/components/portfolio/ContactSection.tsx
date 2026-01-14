@@ -1,18 +1,19 @@
 import { portfolioData } from "@/data/portfolio";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Github, Linkedin, MapPin, MessageCircle } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin, MessageCircle, Calendar } from "lucide-react";
 
 export function ContactSection() {
   const { contacts, profile } = portfolioData;
 
   const contactLinks = [
     { icon: MessageCircle, label: "WhatsApp", value: contacts.phone, href: contacts.whatsapp, highlight: true },
+    { icon: Calendar, label: "Schedule a Call", value: "Book a 30-min meeting", href: contacts.calendly },
     { icon: Mail, label: "Email", value: contacts.email, href: `mailto:${contacts.email}` },
     { icon: Github, label: "GitHub", value: "GitHub Profile", href: contacts.github },
     { icon: Linkedin, label: "LinkedIn", value: "LinkedIn Profile", href: contacts.linkedin },
     { icon: MapPin, label: "Location", value: profile.location, href: null },
-  ].filter((link) => link.value);
+  ].filter((link) => link.value && link.href !== "");
 
   return (
     <section id="contact" className="section-padding">
