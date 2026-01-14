@@ -103,13 +103,6 @@ export function HeroSection() {
             )}
           </div>
 
-          {/* Scroll indicator */}
-          <button
-            onClick={handleScrollToAbout}
-            className="absolute bottom-8 left-1/2 -translate-x-1/2 p-2 animate-bounce text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <ArrowDown className="w-6 h-6" />
-          </button>
         </div>
       </div>
     </section>
