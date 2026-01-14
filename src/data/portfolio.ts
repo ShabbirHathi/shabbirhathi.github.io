@@ -1,0 +1,243 @@
+// Portfolio data - All content is driven from this file
+// No hardcoded text in components
+
+export const portfolioData = {
+  profile: {
+    name: "Shabbir Hathi",
+    title: "AI Engineer & Backend Developer",
+    location: "Surat, IN",
+    timezone: "Asia/Kolkata",
+    pronouns: "he/him",
+    summaryShort: "Builds AI chatbots (RAG), data pipelines, and GenAI systems; ships secure SaaS backends.",
+    summaryLong: `AI/Backend engineer focused on production LLM systems (RAG), data ingestion, and GenAI image generation. I build SaaS products end‑to‑end with Django/Flask, design retrieval and embedding pipelines, integrate payments/auth, and deliver robust observability. Recent work includes an AI chatbot SaaS with Stripe and magic links, an anti‑piracy SaaS with automated detection, sports data scraping pipelines, a textile pattern generator fine‑tuned on Stable Diffusion, and portable RAG backends.`,
+    links: {
+      email: "shabbirhathi4@gmail.com",
+      github: "https://github.com/shabbirhathi",
+      linkedin: "https://www.linkedin.com/in/shabbir-hathi-54704a17b/",
+      website: "",
+      calendly: "",
+    },
+    availability: "open_to_work",
+    rolesOfInterest: ["AI Engineer", "ML Engineer", "Full-stack (AI)", "Backend Engineer"],
+    lastUpdated: "2025-10-15",
+    yearsOfExperience: "3+",
+    industriesWorkedIn: ["AI/ML", "SaaS", "Data Engineering", "E-commerce", "Sports Analytics"],
+  },
+
+  skills: {
+    core: ["Python", "Django", "Flask", "React", "RAG", "LangChain", "OpenAI", "Stable Diffusion", "Web Scraping"],
+    supporting: ["MySQL", "PostgreSQL", "Qdrant", "Chroma", "Redis", "Celery", "Selenium", "BeautifulSoup", "PyTorch", "TensorFlow", "OpenCV", "Docker", "Nginx"],
+    tools: ["Stripe", "SerpAPI", "Magic Link Authentication", "GitHub Actions", "Terraform"],
+    methodologies: ["TDD", "CICD", "Observability"],
+  },
+
+  experiences: [
+    {
+      id: "iroid-solutions",
+      company: "iRoid Solutions",
+      title: "AI Engineer & Backend Developer",
+      period: "Nov 2024 - Present",
+      impact: [
+        "Built production RAG backend with streaming and multi‑provider LLM routing",
+        "Developed AI event planning agent with LangChain tools and real‑time chat",
+        "Created self‑hosted vector database API with contextual compression",
+        "Implemented impact analysis service for LMS to business KPI correlation",
+      ],
+      tech: ["Flask", "LangChain", "Qdrant", "OpenAI", "Socket.IO", "SQLAlchemy", "Docker", "Nginx"],
+      website: "https://iroidsolutions.com/",
+    },
+    {
+      id: "differenz-system",
+      company: "Differenz System",
+      title: "AI Engineer & Backend Developer",
+      period: "Feb 2023 - Oct 2024",
+      impact: [
+        "Built recommendation system with cosine similarity and Apriori algorithms",
+        "Developed AI dog breed identifier with 95%+ accuracy and 10K+ downloads",
+        "Automated ESPN data scraping pipeline for NBA & NCAA statistics",
+        "Fine‑tuned Stable Diffusion for textile pattern generation with PSD outputs",
+      ],
+      tech: ["Django", "Python", "MySQL", "PyTorch", "TensorFlow", "OpenCV", "BeautifulSoup", "Selenium"],
+      website: "https://www.differenzsystem.com/",
+    },
+    {
+      id: "freelancing-projects",
+      company: "Freelance Projects",
+      title: "Full‑Stack Developer",
+      period: "Jun 2023 - Dec 2024",
+      impact: [
+        "Built AI chatbot SaaS with RAG, embeddable widgets, and Stripe integration",
+        "Developed anti‑piracy SaaS platform with automated detection and admin tools",
+        "Created multiple informative product websites with React + Django architecture",
+      ],
+      tech: ["Django", "React", "Stripe", "RAG", "Embeddings", "SerpAPI", "Bootstrap", "JavaScript"],
+    },
+  ],
+
+  projects: [
+    {
+      title: "AI-based Dog Breed Identifier",
+      category: "Computer Vision / AI",
+      description: "An AI-powered system that identifies dog breeds from images with high accuracy using deep learning models.",
+      features: [
+        "Image classification using CNN architectures",
+        "Supports multiple dog breeds",
+        "REST API for predictions",
+        "Optimized inference pipeline",
+      ],
+      techStack: ["Python", "TensorFlow", "Keras", "OpenCV", "FastAPI"],
+      role: "AI/ML Engineer",
+      type: "Production-ready ML system",
+    },
+    {
+      title: "AI Knowledge Assistant",
+      category: "LLM / RAG",
+      description: "A dynamic AI assistant capable of answering questions from uploaded documents and URLs using Retrieval-Augmented Generation.",
+      features: [
+        "Multi-format document ingestion",
+        "Text cleaning and chunking",
+        "Vector-based semantic search",
+        "Context-aware LLM responses",
+      ],
+      techStack: ["Python", "LangChain", "OpenAI", "ChromaDB", "FastAPI"],
+      role: "Backend & AI Engineer",
+      type: "SaaS-ready AI assistant",
+    },
+    {
+      title: "ESPN Data Scraping Platform",
+      category: "Data Engineering",
+      description: "Automated data scraping system for ESPN NBA and NCAA data used in a betting analytics mobile app.",
+      features: [
+        "Daily automated scraping",
+        "Structured storage in CSV and databases",
+        "High reliability scraping logic",
+        "Data normalization pipelines",
+      ],
+      techStack: ["Python", "BeautifulSoup", "Requests", "Pandas", "Cron Jobs"],
+      role: "Data Engineer",
+      type: "Production data pipeline",
+    },
+    {
+      title: "Predictive Impact Analysis System",
+      category: "Predictive Analytics",
+      description: "System to analyze historical data and generate predictive insights for business impact analysis.",
+      features: [
+        "Historical trend analysis",
+        "Predictive modeling",
+        "Data visualization ready outputs",
+      ],
+      techStack: ["Python", "Scikit-learn", "Pandas", "NumPy"],
+      role: "ML Engineer",
+      type: "Analytics engine",
+    },
+    {
+      title: "Priveguard – Anti-Piracy Service",
+      category: "Backend / SaaS",
+      description: "A subscription-based anti-piracy system that detects and manages pirated digital content.",
+      features: [
+        "Subscription-based access control",
+        "Automated piracy detection",
+        "Content reporting & takedown workflows",
+        "Admin dashboard",
+      ],
+      techStack: ["Python", "Django", "PostgreSQL", "REST APIs"],
+      role: "Backend Engineer",
+      type: "Commercial SaaS platform",
+    },
+    {
+      title: "Recommendation System",
+      category: "Machine Learning",
+      description: "A recommendation engine that suggests relevant items based on user behavior and preferences.",
+      features: [
+        "Collaborative filtering",
+        "Content-based recommendations",
+        "Scalable recommendation logic",
+      ],
+      techStack: ["Python", "Scikit-learn", "Pandas", "NumPy"],
+      role: "ML Engineer",
+      type: "Recommendation engine",
+    },
+    {
+      title: "Remote Vector Database Service",
+      category: "AI Infrastructure",
+      description: "Remote vector database service enabling semantic search and embedding storage.",
+      features: [
+        "High-performance vector storage",
+        "Remote access API",
+        "Scalable architecture",
+      ],
+      techStack: ["Python", "ChromaDB", "FastAPI", "Docker"],
+      role: "Backend & AI Engineer",
+      type: "AI infrastructure service",
+    },
+    {
+      title: "SupportJoy – AI Customer Support Bot",
+      category: "AI Agents",
+      description: "AI-powered customer support chatbot capable of handling FAQs and contextual queries.",
+      features: [
+        "Automated customer query handling",
+        "Context-aware responses",
+        "Scalable multi-tenant architecture",
+      ],
+      techStack: ["Python", "LangChain", "OpenAI", "FastAPI"],
+      role: "AI Engineer",
+      type: "AI customer support system",
+    },
+    {
+      title: "Textile Pattern GenAI",
+      category: "Generative AI",
+      description: "A generative AI platform that creates textile patterns from text prompts using diffusion models.",
+      features: [
+        "Text-to-image generation",
+        "Payment & referral system",
+        "Pattern customization",
+      ],
+      techStack: ["Python", "Stable Diffusion", "PyTorch", "FastAPI"],
+      role: "AI Engineer",
+      type: "Generative AI product",
+    },
+    {
+      title: "Wenue App",
+      category: "Web Application",
+      description: "A web platform for managing venue-related operations with a modern backend architecture.",
+      features: [
+        "User management",
+        "Dynamic content handling",
+        "Scalable backend APIs",
+      ],
+      techStack: ["Python", "Django", "PostgreSQL", "REST APIs"],
+      role: "Backend Engineer",
+      type: "Web application",
+    },
+    {
+      title: "Informative Websites & Product Showcases",
+      category: "Web Development",
+      description: "Developed informative and product-focused websites designed to clearly communicate value propositions and improve user engagement.",
+      features: [
+        "SEO-optimized informative pages",
+        "Product showcase layouts",
+        "Clean UI/UX for better readability",
+        "Responsive design for all devices",
+      ],
+      techStack: ["HTML", "CSS", "JavaScript", "WordPress", "PHP"],
+      role: "Full Stack / Web Developer",
+      type: "Marketing & informational websites",
+    },
+  ],
+
+  contacts: {
+    email: "shabbirhathi4@gmail.com",
+    phone: "+91-9157725351",
+    github: "https://github.com/shabbirhathi",
+    linkedin: "https://www.linkedin.com/in/shabbir-hathi-54704a17b/",
+    website: "",
+    calendly: "",
+  },
+
+  footer: {
+    copyright: `© ${new Date().getFullYear()} Shabbir Hathi. All rights reserved.`,
+    tagline: "Building the future with AI & code.",
+  },
+};
+
+export type PortfolioData = typeof portfolioData;
