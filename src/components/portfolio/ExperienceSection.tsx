@@ -1,5 +1,4 @@
 import { portfolioData } from "@/data/portfolio";
-import { ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 export function ExperienceSection() {
@@ -51,18 +50,8 @@ export function ExperienceSection() {
 
                       {/* Company and title */}
                       <div className="mt-2 space-y-1">
-                        <h3 className="text-xl font-bold flex items-center gap-2 flex-wrap">
+                        <h3 className="text-xl font-bold">
                           {exp.company}
-                          {exp.website && (
-                            <a
-                              href={exp.website}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-primary hover:text-primary/80 transition-colors"
-                            >
-                              <ExternalLink className="w-4 h-4" />
-                            </a>
-                          )}
                         </h3>
                         <p className="text-primary font-medium">{exp.title}</p>
                       </div>

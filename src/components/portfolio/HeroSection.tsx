@@ -1,4 +1,4 @@
-import { ArrowDown, Download, Mail, Github, Linkedin, MapPin } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin } from "lucide-react";
 import { portfolioData } from "@/data/portfolio";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -65,17 +65,6 @@ export function HeroSection() {
             >
               <Mail className="w-4 h-4 mr-2" />
               Contact Me
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="min-w-[160px]"
-              asChild
-            >
-              <a href={`mailto:${profile.links.email}?subject=Resume Request`}>
-                <Download className="w-4 h-4 mr-2" />
-                Download Resume
-              </a>
             </Button>
           </div>
 
