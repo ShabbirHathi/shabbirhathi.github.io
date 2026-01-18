@@ -33,34 +33,6 @@ export const portfolioData = {
 
   experiences: [
     {
-      id: "iroid-solutions",
-      company: "iRoid Solutions",
-      title: "AI Engineer & Backend Developer",
-      period: "Nov 2024 - Present",
-      impact: [
-        "Built production RAG backend with streaming and multi‑provider LLM routing",
-        "Developed AI event planning agent with LangChain tools and real‑time chat",
-        "Created self‑hosted vector database API with contextual compression",
-        "Implemented impact analysis service for LMS to business KPI correlation",
-      ],
-      tech: ["Flask", "LangChain", "Qdrant", "OpenAI", "Socket.IO", "SQLAlchemy", "Docker", "Nginx"],
-      website: "https://iroidsolutions.com/",
-    },
-    {
-      id: "differenz-system",
-      company: "Differenz System",
-      title: "AI Engineer & Backend Developer",
-      period: "Feb 2023 - Oct 2024",
-      impact: [
-        "Built recommendation system with cosine similarity and Apriori algorithms",
-        "Developed AI dog breed identifier with 95%+ accuracy and 10K+ downloads",
-        "Automated ESPN data scraping pipeline for NBA & NCAA statistics",
-        "Fine‑tuned Stable Diffusion for textile pattern generation with PSD outputs",
-      ],
-      tech: ["Django", "Python", "MySQL", "PyTorch", "TensorFlow", "OpenCV", "BeautifulSoup", "Selenium"],
-      website: "https://www.differenzsystem.com/",
-    },
-    {
       id: "freelancing-projects",
       company: "Freelance Projects",
       title: "Full‑Stack Developer",
@@ -73,6 +45,32 @@ export const portfolioData = {
         "Developed data scraping and automation tools for business intelligence",
       ],
       tech: ["Django", "React", "Stripe", "RAG", "Embeddings", "SerpAPI", "Bootstrap", "JavaScript"],
+    },
+    {
+      id: "iroid-solutions",
+      company: "iRoid Solutions",
+      title: "AI Engineer & Backend Developer",
+      period: "Sep 2024 - Present",
+      impact: [
+        "Built production RAG backend with streaming and multi‑provider LLM routing",
+        "Developed AI event planning agent with LangChain tools and real‑time chat",
+        "Created self‑hosted vector database API with contextual compression",
+        "Implemented impact analysis service for LMS to business KPI correlation",
+      ],
+      tech: ["Flask", "LangChain", "Qdrant", "OpenAI", "Socket.IO", "SQLAlchemy", "Docker", "Nginx"],
+    },
+    {
+      id: "differenz-system",
+      company: "Differenz System",
+      title: "AI Engineer & Backend Developer",
+      period: "Sep 2022 - May 2024",
+      impact: [
+        "Built recommendation system with cosine similarity and Apriori algorithms",
+        "Developed AI dog breed identifier with 95%+ accuracy and 10K+ downloads",
+        "Automated ESPN data scraping pipeline for NBA & NCAA statistics",
+        "Fine‑tuned Stable Diffusion for textile pattern generation with PSD outputs",
+      ],
+      tech: ["Django", "Python", "MySQL", "PyTorch", "TensorFlow", "OpenCV", "BeautifulSoup", "Selenium"],
     },
   ],
 
