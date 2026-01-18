@@ -13,7 +13,7 @@ export const portfolioData = {
     links: {
       email: "shabbirhathi4@gmail.com",
       github: "https://github.com/shabbirhathi",
-      linkedin: "https://www.linkedin.com/in/shabbir-hathi-54704a17b/",
+      linkedin: "https://www.linkedin.com/in/hathi-shabbir-a75509161/",
       website: "",
       calendly: "https://calendly.com/shabbirhathi4/30min",
     },
@@ -230,7 +230,7 @@ export const portfolioData = {
     phone: "+91 91577 25351",
     whatsapp: "https://wa.me/919157725351?text=Hello%20Shabbir!%20I%27m%20interested%20in%20discussing%20a%20project%20with%20you.",
     github: "https://github.com/shabbirhathi",
-    linkedin: "https://www.linkedin.com/in/shabbir-hathi-54704a17b/",
+    linkedin: "https://www.linkedin.com/in/hathi-shabbir-a75509161/",
     website: "",
     calendly: "https://calendly.com/shabbirhathi4/30min",
   },
