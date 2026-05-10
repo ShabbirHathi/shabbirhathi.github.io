@@ -20,7 +20,7 @@ export const portfolioData = {
     availability: "open_to_work",
     rolesOfInterest: ["AI Engineer", "ML Engineer", "Full-stack (AI)", "Backend Engineer"],
     lastUpdated: "2025-10-15",
-    yearsOfExperience: "3+",
+    yearsOfExperience: "4+",
     industriesWorkedIn: ["AI/ML", "SaaS", "Data Engineering", "E-commerce", "Sports Analytics"],
   },
 
