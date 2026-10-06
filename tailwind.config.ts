@@ -55,6 +55,10 @@ export default {
           line: "hsl(var(--timeline-line))",
           dot: "hsl(var(--timeline-dot))",
         },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

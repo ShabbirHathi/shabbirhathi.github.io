@@ -1,0 +1,14 @@
+{
+  "name": "Shabbir Hathi - AI Engineer & Backend Developer",
+  "short_name": "Shabbir Hathi",
+  "description": "Production AI systems, shipped end to end: RAG backends, multi-agent LLM pipelines, and SaaS platforms.",
+  "icons": [
+    { "src": "/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ],
+  "theme_color": "#1a6a7d",
+  "background_color": "#f8f9fa",
+  "display": "standalone",
+  "start_url": "/"
+}

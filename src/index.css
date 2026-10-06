@@ -16,8 +16,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 20% 10%;
 
-    /* Professional teal accent */
-    --primary: 190 70% 35%;
+    /* Professional teal accent.
+       35% -> 30%: at 35% this failed WCAG AA as text (4.4:1 on white) and as a
+       button background under white text. 30% measures 5.70:1 in both roles. */
+    --primary: 190 70% 30%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 15% 93%;
@@ -34,12 +36,15 @@
 
     --border: 210 15% 90%;
     --input: 210 15% 90%;
-    --ring: 190 70% 35%;
+    --ring: 190 70% 30%;
 
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(190 70% 35%) 0%, hsl(210 60% 40%) 100%);
+    --hero-gradient: linear-gradient(135deg, hsl(190 70% 30%) 0%, hsl(210 60% 35%) 100%);
+    /* Success/WhatsApp: green-500 under white text was 2.28:1. green-700 is 5.02:1. */
+    --success: 142 72% 29%;
+    --success-foreground: 0 0% 100%;
     --card-shadow: 0 4px 24px -4px hsla(220, 20%, 10%, 0.08);
     --card-shadow-hover: 0 8px 32px -4px hsla(220, 20%, 10%, 0.12);
     --text-gradient: linear-gradient(135deg, hsl(190 70% 35%) 0%, hsl(210 60% 45%) 100%);
@@ -88,6 +93,11 @@
     --border: 220 15% 18%;
     --input: 220 15% 18%;
     --ring: 185 65% 50%;
+
+    /* On dark, a light green with DARK text (9.0:1) reads far better than white
+       on mid-green (3.0:1) - same inversion the primary token uses here. */
+    --success: 142 60% 50%;
+    --success-foreground: 220 20% 7%;
 
     --hero-gradient: linear-gradient(135deg, hsl(185 65% 40%) 0%, hsl(210 50% 35%) 100%);
     --card-shadow: 0 4px 24px -4px hsla(0, 0%, 0%, 0.3);

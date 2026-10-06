@@ -31,10 +31,10 @@ export function Footer() {
                 href={link.href}
                 target={link.href.startsWith("mailto") ? undefined : "_blank"}
                 rel="noopener noreferrer"
-                className="p-2 rounded-lg bg-muted hover:bg-accent transition-colors"
+                className="inline-flex items-center justify-center w-11 h-11 rounded-lg bg-muted hover:bg-accent transition-colors"
                 aria-label={link.label}
               >
-                <link.icon className="w-4 h-4" />
+                <link.icon className="w-[18px] h-[18px]" />
               </a>
             ))}
           </div>

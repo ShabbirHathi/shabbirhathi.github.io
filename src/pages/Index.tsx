@@ -2,8 +2,9 @@ import { Navigation } from "@/components/portfolio/Navigation";
 import { HeroSection } from "@/components/portfolio/HeroSection";
 import { AboutSection } from "@/components/portfolio/AboutSection";
 import { SkillsSection } from "@/components/portfolio/SkillsSection";
-import { ExperienceSection } from "@/components/portfolio/ExperienceSection";
+import { ClientsSection } from "@/components/portfolio/ClientsSection";
 import { ProjectsSection } from "@/components/portfolio/ProjectsSection";
+import { TestimonialsSection } from "@/components/portfolio/TestimonialsSection";
 import { ContactSection } from "@/components/portfolio/ContactSection";
 import { Footer } from "@/components/portfolio/Footer";
 import { portfolioData } from "@/data/portfolio";
@@ -22,8 +23,9 @@ const Index = () => {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
-        <ExperienceSection />
+        <ClientsSection />
         <ProjectsSection />
+        <TestimonialsSection />
         <ContactSection />
       </main>
       <Footer />

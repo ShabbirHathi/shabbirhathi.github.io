@@ -34,7 +34,7 @@ export function ContactSection() {
               <Card
                 key={link.label}
                 className={`card-shadow hover:card-shadow-hover transition-shadow ${
-                  link.highlight ? "border-green-500/50 bg-green-500/5" : ""
+                  link.highlight ? "border-success/50 bg-success/5" : ""
                 }`}
               >
                 <CardContent className="p-4">
@@ -43,14 +43,14 @@ export function ContactSection() {
                       href={link.href}
                       target={link.href.startsWith("mailto") ? undefined : "_blank"}
                       rel="noopener noreferrer"
-                      className="flex items-center gap-4 group"
+                      className="flex items-center gap-4 group min-h-[44px]"
                     >
                       <div className={`p-3 rounded-lg transition-colors ${
-                        link.highlight 
-                          ? "bg-green-500/10 group-hover:bg-green-500/20" 
+                        link.highlight
+                          ? "bg-success/10 group-hover:bg-success/20"
                           : "bg-accent group-hover:bg-primary/10"
                       }`}>
-                        <link.icon className={`w-5 h-5 ${link.highlight ? "text-green-500" : "text-primary"}`} />
+                        <link.icon className={`w-5 h-5 ${link.highlight ? "text-success" : "text-primary"}`} />
                       </div>
                       <div className="flex-1">
                         <p className="text-sm text-muted-foreground">{link.label}</p>
@@ -59,7 +59,7 @@ export function ContactSection() {
                         </p>
                       </div>
                       {link.highlight && (
-                        <Button size="sm" className="bg-green-500 hover:bg-green-600 text-white">
+                        <Button size="sm" className="min-h-[44px] px-4 bg-success hover:bg-success/90 text-success-foreground shrink-0">
                           Chat Now
                         </Button>
                       )}
@@ -86,7 +86,7 @@ export function ContactSection() {
               <CardContent className="p-4">
                 <p className="text-sm text-center">
                   <span className="inline-flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                    <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
                     <span className="font-medium">Currently available</span>
                   </span>
                   <span className="text-muted-foreground">
